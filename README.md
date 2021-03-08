@@ -1,12 +1,12 @@
 ### @explicitHints true
 
-# Turtle Logo - Lesson #4
+# Turtle Logo - Lesson #5
 
-## Turtle Logo - Lesson #4 @unplugged
-**Making the Turtle's Pen Change Color.**
+## Turtle Logo - Lesson #5 @unplugged
+**Making the Turtle's Pen Move Up and Down.**
 
-In this lesson you will change the color of the trail the **Turtle** leaves.
-![color](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson4/raw/main/assets/color_screenshot.png)
+In this lesson you will make the **Turtle** lift it's pen up and down.
+![color](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson5/raw/main/assets/pen_up_screenshot.png)
 
 ## Step 1
 ** Follow Along**
@@ -19,66 +19,81 @@ turtle.showTurtle()
 ## Step 2
 ** Follow Along**
 
-The **Turtle** by default leaves a white trail behind it. This color can be changed by using the ⇢set turtle's pen color to ▢⇠ block.
+Previously we have learned how to make the **Turtle** move around the game console and leave a trail. But sometimes we might not want to leave a trail, then what?
 ```blocks
 turtle.showTurtle()
-turtle.setPenColor(1)
+turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
 ```
 
 ## Step 3
 ** Follow Along**
 
-Inside the ⇢set turtle's pen color to ▢⇠ block, select the "▢" and select *red*. Now add a ⇢myTurtle move forward 25 steps⇠ block to see the new red trail.
+To solve this problem you use the ⇢set turtle's pen up⇠ block. As the name implies, it lifts the **Turtle's** pen up
 ```blocks
 turtle.showTurtle()
-turtle.setPenColor(2)
 turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
+turtle.pen(TurtlePenMode.Up)
 ```
 
 ## Step 4
 ** Follow Along**
 
-You can even change the color more than once. After moving forwards, add another ⇢set turtle's pen color to ▢⇠ block and change the color to *blue* then add forwards again.
+Once the pen is up, if you move again no trail will be left behind.
 ```blocks
 turtle.showTurtle()
-turtle.setPenColor(2)
 turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
-turtle.setPenColor(8)
+turtle.pen(TurtlePenMode.Up)
 turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
 ```
 
-## Step 4
+## Step 5
+** Follow Along**
+
+You can also use the ⇢set turtle's pen up⇠ block again, and change the "up" to "down" to make it leave a trail again.
+```blocks
+turtle.showTurtle()
+turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
+turtle.pen(TurtlePenMode.Up)
+turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
+turtle.pen(TurtlePenMode.Down)
+turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
+```
+## Step 6
 ** Try it Out**
 
-Now try moving the **Turtle** some different distances, different directions, turning and changing color.
+Now try moving the **Turtle** some different distances, different directions, turning, changing color and lifting it's pen up and down.
 ```blocks
 turtle.showTurtle()
 turtle.setPenColor(8)
-turtle.moveTurtleDirection(TurtleDirection.Backward, 25)
+turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
 turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Right, 90)
-turtle.setPenColor(2)
+turtle.pen(TurtlePenMode.Up)
 turtle.moveTurtleDirection(TurtleDirection.Forward, 50)
 turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Left, 90)
 turtle.setPenColor(7)
+turtle.pen(TurtlePenMode.Down)
 turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
 ```
 
-## Step 6
+## Step 7
 **Success!**
 
-You can now change the trail color the **Turtle** leaves.
+You can now change get the **Turtle** to lift the pen up and down.
 
-## Step 7
+## Step 8
 **Your Turn**
 
 Get your **Turtle** to:
 - move
 - change its trail color
 - turn
+- lift the pen up
 - move again
-- then say, "I can change colors!"
+- put the pen down
+- move again
+- then say, "I can lift my pen!"
 
-## Step 8
+## Step 9
 **Done**
 
 You have successfully completed your forth lesson in Turtle Logo.
