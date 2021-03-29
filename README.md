@@ -78,7 +78,7 @@ turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
 ## Step 7
 **Success!**
 
-You can now change get the **Turtle** to lift the pen up and down.
+You can now get the **Turtle** to lift the pen up and down.
 
 ## Step 8
 **Your Turn**
